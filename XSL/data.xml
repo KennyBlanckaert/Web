@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="streets_foreach_citypart.xsl"?>
+<?xml-stylesheet type="text/xsl" href="sector_streets.xsl"?>
 <root>
     <element>
         <postcode>9000</postcode>
