@@ -8,14 +8,9 @@
         </streets_per_citypart>
     </xsl:template>
 
-
-    <!-- within root tag -->
-    <!-- iterate over all elements -->
-    <!-- select elements with <sector> = A20 -->
-    <!-- sort -->
     <xsl:key name="group" match="element" use="stadsdeel"/>
-
     <xsl:template match="root">
+        <!-- Count is 1 WHEN element . (self) IS EQUAL TO the first element of group -->
         <xsl:for-each select="element[count(. | key('group', stadsdeel)[1]) = 1]">
                 <xsl:sort select="stadsdeel" />
                 <xsl:apply-templates select="." />
