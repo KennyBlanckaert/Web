@@ -19,14 +19,16 @@
         <h1>Library Catalog</h1>
         <ul>
             <xsl:for-each select="book">
-                <xsl:sort select="book/@isbn"/>
-                <xsl:apply-templates select="."/>
+                <xsl:sort select="@id"/>
+                <xsl:apply-templates select=".">
+                    <xsl:with-param select="@id" name="id"/>
+                </xsl:apply-templates>
             </xsl:for-each>
         </ul>
     </xsl:template>
 
     <xsl:template match="book">
-        <xsl:variable name="id" select="@id"/>
+        <xsl:param name="id"/>
         <xsl:variable name="title" select="title"/>
         <xsl:variable name="genre" select="genre"/>
         <xsl:variable name="author" select="author"/>
