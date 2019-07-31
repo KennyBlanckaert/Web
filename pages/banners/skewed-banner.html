@@ -2,10 +2,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Curved Banner</title>
+        <title>Skewed Banner</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/curved.css">
+        <link rel="stylesheet" href="css/skewed.css">
     </head>
     <body>
         
@@ -13,28 +13,33 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
         <!-- Header -->
-        <header id="header">
-            <div class="banner">
-                <ul>
-                    <li><a href="straight-banner.html">Straight</a></li>
-                    <li><a href="skewed-banner.html">Skewed</a></li>
-                    <li><a href="pentagon-banner.html">Pentagon</a></li>
-                    <li><a href="curved-banner.html">Curved</a></li>
-                </ul>
+        <div id="headwrapper">
+            <header id="header">
+                <div class="banner">
+                    <ul>
+                        <li><a href="straight-banner.html">Straight</a></li>
+                        <li><a href="skewed-banner.html">Skewed</a></li>
+                        <li><a href="pentagon-banner.html">Pentagon</a></li>
+                        <li><a href="curved-banner.html">Curved</a></li>
+                    </ul>
 
-                <h1>Enjoy the beauty of pure CSS</h1>
-                
-                <div id="info-container">
-                    <p id="info">The curved banner is obtained by applying a 120% width and granting the bottom corners a border-radius of 50% 20% </p>
-                </div>
+                    <h1>Enjoy the beauty of pure CSS</h1>
 
-                <div class="buttons">
-                    <button type="button" class="btn btn-default" onclick="blueGradient()">Blue</button>
-                    <button type="button" class="btn btn-default" onclick="orangeGradient()">Orange</button>
-                    <button type="button" class="btn btn-default" onclick="purpleGradient()">Purple</button>
+                    <div id="info-container">
+                        <p id="info">
+                            To obtain a skewed banner, the clip-path CSS property is used </br>
+                            A little trick is required to apply the shadow though...
+                        </p>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="button" class="btn btn-default" onclick="blueGradient()">Blue</button>
+                        <button type="button" class="btn btn-default" onclick="orangeGradient()">Orange</button>
+                        <button type="button" class="btn btn-default" onclick="purpleGradient()">Purple</button>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <!-- Page Content -->
         <div id=wrapper>
@@ -106,10 +111,12 @@
         </div>
 
         <!-- Footer -->
-        <footer id="footer">
-            <p id="left-footer">Images downloaded from unDraw.co</p>
-            <p id="right-footer">Made by Kenny Blanckaert</p>
-        </footer>
+        <div id="footwrapper">
+            <footer id="footer">
+                <p id="left-footer">Images downloaded from unDraw.co</p>
+                <p id="right-footer">Made by Kenny Blanckaert</p>
+            </footer>
+        </div>
     </body>
 
     <!-- Script for color changes -->
