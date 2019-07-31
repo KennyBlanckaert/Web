@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Curved Banner</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/curved.css">
+    </head>
+    <body>
+        
+        <!-- Jquery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- Header -->
+        <header id="header">
+            <div class="banner">
+                <h1>Enjoy the beauty of pure CSS</h1>
+
+                <p id="info">The curved banner is obtained by applying a 120% width</p>
+                <p id="info">and granting the bottom corners a border-radius of 50% 20% </p>
+
+                <div class="buttons">
+                    <button type="button" class="btn btn-default" onclick="blueGradient()">Blue</button>
+                    <button type="button" class="btn btn-default" onclick="orangeGradient()">Orange</button>
+                    <button type="button" class="btn btn-default" onclick="purpleGradient()">Purple</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div id=wrapper>
+            <div class="section">
+                <div class="group">
+                    <div class="svg-container">
+                        <img src="images/collecting.svg" class="svg" />
+                    </div>
+                    <div class="text-container extra-padding">
+                        <h2>Collect designs on internet</h2>
+
+                        <p>
+                            Search the internet for appropriate designs. <br/>
+                            Choose a stunning template and customize anything with the Wix website builder
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="group">
+                    <div class="text-container reversed">
+                        <h2>Start developing your design</h2>
+
+                        <p>
+                            Mirror and update the code to your heart's content.
+                            If you encouter any difficulties, Udemy courses can give you great assistance.
+                        </p>
+                    </div>
+                    <div class="svg-container reversed">
+                        <img src="images/developing.svg" class="svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="group">
+                    <div class="svg-container">
+                        <img src="images/sharing.svg" class="svg" />
+                    </div>
+                    <div class="text-container">
+                        <h2>Make your code open source</h2>
+
+                        <p>
+                            Sharing your ideas and results <br/>
+                            can support other people. <br/>
+                            Try working togheter as much as possible!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="group">
+                    <div class="text-container reversed">
+                        <h2>Review each others code</h2>
+
+                        <p>
+                            Finally, report possible improvements to your colleagues
+                            by opening a pull request on Github <br/>
+                            or ask for permissions to do the code changes yourself!
+                        </p>
+                    </div>
+                    <div class="svg-container reversed">
+                        <img src="images/reviewing.svg" class="svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p id="left-footer">Images downloaded from unDraw.co</p>
+            <p id="right-footer">Made by Kenny Blanckaert</p>
+        </footer>
+    </body>
+
+    <!-- Script for color changes -->
+    <script  src="js/colors.js"></script>
+
+    <!-- Script to import the full svg code (for CSS) -->
+    <script src="js/inline-svg.js"></script>
+</html>

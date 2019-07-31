@@ -1,0 +1,1 @@
+* Host these templates on a web server to avoid CORS issues.
