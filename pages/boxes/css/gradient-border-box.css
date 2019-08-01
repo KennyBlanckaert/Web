@@ -6,7 +6,7 @@ html, body {
     height: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    background: #100726;
+    background: rgba(13, 13, 13, 0.7);
     z-index: -2;
 }
 
