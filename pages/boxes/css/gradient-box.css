@@ -116,3 +116,15 @@ button {
 .orange-white {
     background: linear-gradient( to bottom right, #cf8308, #ffffff, #ffffff);
 }
+
+.purple-white:hover {
+    background: linear-gradient( to bottom right, #ffffff, #ca2ded, #ca2ded);
+}
+
+.blue-white:hover {
+    background: linear-gradient( to bottom right, #ffffff, #19bde6, #19bde6);
+}
+
+.orange-white:hover {
+    background: linear-gradient( to bottom right, #ffffff, #cf8308, #cf8308);
+}

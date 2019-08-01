@@ -151,3 +151,7 @@ button {
 .orange-yellow {
     background: linear-gradient(90deg, #fc7b03, #eaf556);
 }
+
+button:hover {
+    color: white;
+}
