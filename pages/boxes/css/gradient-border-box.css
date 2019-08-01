@@ -1,9 +1,13 @@
 html, body {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     background: #100726;
+    z-index: -2;
 }
 
 #wrapper {
@@ -58,20 +62,51 @@ ul li a:hover {
     padding: 0px 0px 0px 0px;
     background: white;
     float: left;
-    border-radius: 30px;
-    box-shadow: 10px 20px 30px rgba(100, 100, 100, .5);
+    position: relative;
+    background: linear-gradient(0deg, #111111, #222222);
 }
 
-.blue {
-    background: linear-gradient( to bottom right, #19bde6, #199c63);
+.purple:before, .purple:after  {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: linear-gradient(45deg, #9f0dde, #17171717, #17171717, #ad1538);
+    z-index: -1;
 }
 
-.purple {
-    background: linear-gradient( to bottom right, #ca2ded, #1f2bd1);
+.blue:before, .blue:after  {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: linear-gradient(45deg, #1570ad, #17171717, #17171717, #318224);
+    z-index: -1;
 }
 
-.orange {
-    background: linear-gradient( to bottom right, #cf8308, #cf1b7e);
+.orange:before, .orange:after  {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: linear-gradient(45deg, #fc7b03, #17171717, #17171717, #eaf556);
+    z-index: -1;
+}
+
+.purple:after {
+    filter: blur(40px);
+}
+.blue:after {
+    filter: blur(40px);
+}
+.orange:after {
+    filter: blur(40px);
 }
 
 h2 {
@@ -105,14 +140,14 @@ button {
     cursor: pointer;
 }
 
-.purple-white {
-    background: linear-gradient( to bottom right, #ca2ded, #ffffff, #ffffff);
+.purple-red {
+    background: linear-gradient(90deg, #9f0dde, #ad1538);
 }
 
-.blue-white {
-    background: linear-gradient( to bottom right, #19bde6, #ffffff, #ffffff);
+.blue-green {
+    background: linear-gradient(90deg, #1570ad, #318224);
 }
 
-.orange-white {
-    background: linear-gradient( to bottom right, #cf8308, #ffffff, #ffffff);
+.orange-yellow {
+    background: linear-gradient(90deg, #fc7b03, #eaf556);
 }
