@@ -16,6 +16,7 @@ html, body {
 ul {
     list-style: none;
     text-align: center;
+    width: 100%;
     padding: 40px 30px 0px 0px;
     margin: 0px;
 }
@@ -144,5 +145,32 @@ button {
         top: 100px;
         left: calc(50% - 200px);
         margin-left: 50px;
+    }
+
+    .box {
+        margin: 10px 10px 10px 10px;
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        height: 1550px;
+    }
+
+    #boxwrapper {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 100px;
+        left: calc(50% - 200px);
+        margin-left: 50px;
+    }
+
+    .box {
+        margin: 10px auto;
+        padding: 0px 0px 0px 0px;
+        float: none;
     }
 }
