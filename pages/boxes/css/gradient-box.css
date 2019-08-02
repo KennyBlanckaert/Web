@@ -128,3 +128,21 @@ button {
 .orange-white:hover {
     background: linear-gradient( to bottom right, #ffffff, #cf8308, #cf8308);
 }
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1150px) {
+
+    body {
+        height: 1550px;
+    }
+
+    #boxwrapper {
+        width: 400px;
+        height: auto;
+        position: absolute;
+        top: 100px;
+        left: calc(50% - 200px);
+        margin-left: 50px;
+    }
+}
