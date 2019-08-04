@@ -167,8 +167,8 @@ ul li a:hover {
         left: calc(50% - 200px);
     }
 
-    .box {
-        margin: 10px 0px 10px 50px;
+    .card {
+        margin: 20px 25px 200px 25px;
         padding: 0px 0px 0px 0px;
     }
 }
