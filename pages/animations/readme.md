@@ -1,1 +1,1 @@
-* [waldo](kennyblanckaert.github.io/Web/pages/animations/waldo.html)
+* [waldo](https://kennyblanckaert.github.io/Web/pages/animations/waldo.html)
