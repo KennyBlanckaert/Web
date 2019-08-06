@@ -1,5 +1,5 @@
-* kennyblanckaert.github.io/Web/pages/cards/gradient-cards.html
-* kennyblanckaert.github.io/Web/pages/cards/gradient-border-cards.html
-* kennyblanckaert.github.io/Web/pages/cards/hover-gradient-cards.html
-* kennyblanckaert.github.io/Web/pages/cards/closed-hover-gradient-cards.html
-* kennyblanckaert.github.io/Web/pages/cards/white-gradient-cards.html
+* [gradient-cards](kennyblanckaert.github.io/Web/pages/cards/gradient-cards.html)
+* [gradient-border-cards](kennyblanckaert.github.io/Web/pages/cards/gradient-border-cards.html)
+* [hover-gradient-cards](kennyblanckaert.github.io/Web/pages/cards/hover-gradient-cards.html)
+* [closed-hover-gradient-cards](kennyblanckaert.github.io/Web/pages/cards/closed-hover-gradient-cards.html)
+* [white-gradient-cards](kennyblanckaert.github.io/Web/pages/cards/white-gradient-cards.html)

@@ -1,1 +1,1 @@
-* kennyblanckaert.github.io/Web/pages/navs/accordion-menu.html
+* [accordion-menu](kennyblanckaert.github.io/Web/pages/navs/accordion-menu.html)
