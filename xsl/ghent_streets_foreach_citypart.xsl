@@ -10,11 +10,23 @@
 
     <xsl:key name="group" match="element" use="stadsdeel"/>
     <xsl:template match="root">
+
+        <!-- FIRST METHOD -->
         <!-- Count is 1 WHEN element . (self) IS EQUAL TO the first element of group -->
         <xsl:for-each select="element[count(. | key('group', stadsdeel)[1]) = 1]">
-                <xsl:sort select="stadsdeel" />
-                <xsl:apply-templates select="." />
+            <xsl:sort select="stadsdeel" />
+            <xsl:apply-templates select="." />
         </xsl:for-each>
+
+        <!-- SECOND METHOD -->
+        <!-- <xsl:for-each select="element">
+            <xsl:sort select="stadsdeel" />
+
+            <xsl:variable select="stadsdeel" name="part"/>
+            <xsl:if test="not(preceding-sibling::element[stadsdeel=$part])">
+                <xsl:apply-templates select="." />
+            </xsl:if>
+        </xsl:for-each> -->
     </xsl:template> 
 
     <xsl:template match="element">

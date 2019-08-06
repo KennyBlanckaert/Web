@@ -1,0 +1,233 @@
+html, body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: white;
+    z-index: -2;
+    font-family: Nunito;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+    margin: 0px;
+}
+
+ul li {
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity: 0.7;
+}
+
+ul li a {
+    color: black;
+    font-family: Arial;
+    font-size: 12px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: black;
+    font-family: Arial;
+    font-size: 12px;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#boxwrapper {
+    width: 1050px;
+    height: 450px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 525px);
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    margin: 10px 25px 10px 25px;
+    padding: 0px 0px 0px 0px;
+    background: white;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 10px #dddddd;
+    cursor: pointer;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 20;
+    pointer-events: none;
+}
+
+.container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.id {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transform: translate(-50%, 0%);
+}
+
+.card:nth-child(1) .container .overlay {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: #e91e63;
+    clip-path: circle(50% at 50%);
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
+
+.card:nth-child(2) .container .overlay {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: #23e629;
+    clip-path: circle(50% at 50%);
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
+
+.card:nth-child(3) .container .overlay {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: #2196f2;
+    clip-path: circle(50% at 50%);
+    transform: translate(-50%, 0%);
+    z-index: -1;
+}
+
+.spread {
+    -webkit-animation-name: spread;
+    -webkit-animation-duration: .5s;
+    animation-name: spread;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    position: relative;
+    margin-top: 120px;
+    text-align: center;
+}
+
+p {
+    position: relative;
+    width: calc(100% - 40px);
+    padding: 0px 20px 20px 20px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.button {
+    position: relative;
+    width: 80px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
+    margin: 0px 90px 0px 90px;
+}
+
+@keyframes spread {
+    0% {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        clip-path: circle(50% at 50%);
+        transform: translate(-50%, 0%);
+        z-index: -1;
+    }
+    100% {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        clip-path: none;
+        transform: translate(0%, 0%);
+        z-index: -1;
+    }
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1150px) {
+
+    body {
+        height: 1550px;
+    }
+
+    #boxwrapper {
+        width: 400px;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        left: calc(50% - 200px);
+    }
+
+    .card {
+        margin: 10px 0px 10px 50px;
+        padding: 0px 0px 0px 0px;
+    }
+}

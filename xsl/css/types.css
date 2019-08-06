@@ -1,0 +1,109 @@
+.small {
+    font-size: 10px;
+}
+
+.gray {
+    color: gray;
+}
+
+.grass {
+    margin-right: 10px;
+    font-size: 10px;
+    color: green;
+}
+
+.fire {
+    margin-right: 10px;
+    font-size: 10px;
+    color: orange;
+}
+
+.water {
+    margin-right: 10px;
+    font-size: 10px;
+    color: cornflowerblue;
+}
+
+.bug {
+    margin-right: 10px;
+    font-size: 10px;
+    color: burlywood
+}
+
+.normal {
+    margin-right: 10px;
+    font-size: 10px;
+    color: gray;
+}
+
+.poison {
+    margin-right: 10px;
+    font-size: 10px;
+    color: purple
+}
+
+.electric {
+    margin-right: 10px;
+    font-size: 10px;
+    color: gold;
+}
+
+.ground {
+    margin-right: 10px;
+    font-size: 10px;
+    color: darkgoldenrod;
+}
+
+.psychic {
+    margin-right: 10px;
+    font-size: 10px;
+    color: darksalmon
+}
+
+.flying {
+    margin-right: 10px;
+    font-size: 10px;
+    color: aquamarine;
+}
+
+.fighting {
+    margin-right: 10px;
+    font-size: 10px;
+    color: brown
+}
+
+.ghost {
+    margin-right: 10px;
+    font-size: 10px;
+    color: blueviolet
+}
+
+.ice {
+    margin-right: 10px;
+    font-size: 10px;
+    color: aqua
+}
+
+.rock {
+    margin-right: 10px;
+    font-size: 10px;
+    color: peru
+}
+
+.dragon {
+    margin-right: 10px;
+    font-size: 10px;
+    color: darkblue;
+}
+
+.dark {
+    margin-right: 10px;
+    font-size: 10px;
+    color: darkslategrey
+}
+
+.steel {
+ margin-right: 10px;
+    font-size: 10px;
+    color: slategray
+}

@@ -2,8 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml"/>
 
-    <xsl:key name="group" match="element" use="sector"/>
-
     <xsl:template match="/">
         <sector>
             <naam>A20</naam>
